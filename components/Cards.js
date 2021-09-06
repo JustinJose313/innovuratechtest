@@ -179,7 +179,7 @@ const Cards = () => {
                       </span>
                     </div>
                     <div className="mt-4">
-                      <ul className="grid grid-cols-1 sm:grid-cols-2 list-disc gap-y-2 gap-x-4 pl-4 lg:pl-5">
+                      <ul className="grid grid-cols-1 sm:grid-cols-2 list-disc gap-y-2 gap-x-4 ml-5">
                         {each.points.map((each) => {
                           return (
                             <li key={each} className="text-gray-700">
@@ -379,7 +379,7 @@ const Cards = () => {
                   </svg>
                 </div>
                 <p className="mt-4 text-center text-blue-500">97592 Reviews</p>
-                <button className="flex items-center px-6 py-2 border border-gray-500 bg-gray-100 rounded-full mt-4">
+                <button className="flex items-center px-6 py-2 border border-gray-500 bg-gray-100 hover:bg-gray-50 rounded-full mt-4">
                   <svg
                     className="w-6 h-6 mr-3"
                     xmlns="http://www.w3.org/2000/svg"
@@ -395,7 +395,7 @@ const Cards = () => {
                   </svg>
                   <span>Write Review</span>
                 </button>
-                <div className="flex items-center justify-center mt-6 space-x-6">
+                <div className="flex items-center justify-center mt-6 space-x-10">
                   <div className="flex flex-col items-center cursor-pointer">
                     <svg
                       className="h-8 w-8"
@@ -410,7 +410,7 @@ const Cards = () => {
                         fill="rgba(50,152,219,1)"
                       />
                     </svg>
-                    <p>Chat Now</p>
+                    <p className='text-sm'>Chat Now</p>
                   </div>
                   <div className="flex flex-col items-center cursor-pointer">
                     <svg
@@ -426,7 +426,7 @@ const Cards = () => {
                         fill="rgba(149,164,166,1)"
                       />
                     </svg>
-                    <p>Enquiry</p>
+                    <p className='text-sm'>Enquiry</p>
                   </div>
                 </div>
               </div>

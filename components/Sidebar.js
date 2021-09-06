@@ -39,7 +39,7 @@ const Sidebar = () => {
     <div className="border border-gray-300 p-2 pb-6 lg:sticky top-4">
       <div className="flex font-semibold justify-between items-center">
         <p>Filters</p>
-        <button className='underline'>Clear</button>
+        <button className="underline">Clear</button>
       </div>
       <div className="mt-4 space-y-4">
         {data.map((each) => {
@@ -51,7 +51,9 @@ const Sidebar = () => {
               >
                 <p>{each.name}</p>
                 <svg
-                  className="text-gray-500"
+                  className={`${
+                    location === each.name ? "transform rotate-180" : ""
+                  } transition-all text-gray-500`}
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="24"
